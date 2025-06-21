@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8">
+    <title>Onke Mtshazi Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Onke Mtshazi</h1>
+    <p id="description">This is survey by Tar Onke, where you will be answering questions about him, and thanks for your time.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: </label>
+        <input id="name" type="text" name="name" placeholder="..." required>
+        <label for="surname" id="surname-label">Enter Your Surname: </label>
+        <input id="surname" type="text" name="surname" placeholder="..." required>
+        <label for="email" id="email-label">Enter Your Email Address: </label>
+        <input id="email" type="email" name="email" placeholder="..." required>
+        <label for="number" id="number-label">Enter Your Age (Optional): </label>
+        <input id="number" type="number" min="10" max="44" name="age" placeholder="...">
+        <label for="dropdown" id="dropdown-label">Where Do You Know Tar Onke? </label>
+        <select id="dropdown">
+          <option selected>(select one)</option>
+          <option>From Social Media</option>
+          <option>From School</option>
+          <option>From The Hood</option>
+          <option>I Don't Know Him</option>
+          <option>Seen Him Somewhere</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>How Would You Recommend Him To Your Friends?</legend>
+        <input id="sweet-gent" type="radio" name="recommend" value="nice guy">
+        <label for="sweet-gent">Nice Gent</label><br>
+        <input id="nonex" type="radio" name="recommend" value="Not Recommendable">
+        <label for="nonex">Not Recommendable</label><br>
+        <input id="ugly-guy" type="radio" name="recommend" value="Ugly Guy">
+        <label for="ugly-guy">Ugly Guy</label>
+      </fieldset>
+      <fieldset>
+        <legend>What do you like about him?</legend>
+        <input id="his-walk" type="checkbox" name="about-him" value="Walk">
+        <label for="his-walk">His Walk</label>
+        <br>
+        <input id="his-eyes" type="checkbox" name="about-him" value="Eyes">
+        <label for="his-eyes">His Eyes</label>
+        <br>
+        <input id="his-style" type="checkbox" name="about-him" value="Style">
+        <label for="his-style">His Style</label>
+        <br>
+        <input id="his-smile" type="checkbox" name="about-him" value="Smile">
+        <label for="his-smile">His Smile</label>
+        <br>
+        <input id="everything" type="checkbox" name="about-him" value="Everything">
+        <label for="everything">Everything</label>
+        <br>
+        <input id="nothing" type="checkbox" name="about-him" value="Nothing">
+        <label for="nothing">Nothing</label>
+        <br>
+        <input id="prefer-not-to-say" type="checkbox" name="about-him" value="Prefer Not To Say">
+        <label for="prefer-not-to-say">Prefer Not To Say</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Additional Comment or Suggestion?</label>
+        <textarea id="comments" cols="16" rows="6" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit Here</button>
+    </form>
+  </body>
+</html>
+
